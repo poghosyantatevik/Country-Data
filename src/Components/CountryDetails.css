@@ -3,7 +3,7 @@
 }
 
 .design {
-    background-color: rgb(224, 226, 226);
+    background-color: rgb(224 226 226 / 95%);
     color: black;
     border-radius: 6px;
     width: 30%;
@@ -14,4 +14,10 @@
     font-size: 1.2rem;
     font-weight: 550;
     box-shadow: 0 0 15px 10px rgb(192, 197, 100);
+}
+
+@media only screen and (max-width: 991px) {
+    .design {
+        width: 85% !important;
+    }
 }
