@@ -35,10 +35,18 @@ function App() {
   function handleClick() {
     setCountryData(gqlData.data.country);
   }
+
   return (
     <div className="App">
-      <input type="text" onChange={handleChange} />
-      <button onClick={handleClick}> Search the Country</button>
+      <input
+        type="text"
+        onChange={handleChange}
+        placeholder="Enter a country code"
+        className="input-style"
+      />
+      <button onClick={handleClick} className="button-style">
+        Search
+      </button>
       <CountryDetails country={countryData} />
     </div>
   );
